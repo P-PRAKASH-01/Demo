@@ -19,12 +19,12 @@ const Hero = () => {
 
                     <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
                         <a href="#projects" className="px-8 py-3 bg-neon/10 border border-neon text-neon font-mono 
-                        hover:bg-neon hover:text-black transition-all duration-300 clip-path-polygon">
+                        hover:bg-neon hover:text-white transition-all duration-300 clip-path-polygon">
                             VIEW_PROJECTS
                         </a>
 
                         <a href="#contact" className="px-8 py-3 bg-transparent border border-cyan text-cyan font-mono 
-                        hover:bg-neon hover:border-neon hover:text-black transition-all duration-300">
+                        hover:bg-neon hover:border-neon hover:text-white transition-all duration-300">
                             CONTACT_ME
                         </a>
                     </div>
