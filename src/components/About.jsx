@@ -33,6 +33,7 @@ const About = () => {
                             </p>
                             <p className="text-gray-300 font-mono leading-relaxed">
                                I am a curious and consistent learner who values clarity, structured thinking, and continuous improvement. Through hands-on practice and focused learning, I work on strengthening my technical foundation and applying my skills to meaningful, real-world projects.
+                            </p>
                         </CyberCard>
                     </div>
                 </motion.div>
