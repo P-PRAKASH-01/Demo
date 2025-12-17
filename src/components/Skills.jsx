@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import CyberCard from './CyberCard';
-import { FaCode, FaShieldAlt, FaBrain, FaPython, FaJs, FaReact, FaLinux, FaTerminal, FaNetworkWired, FaUserSecret } from 'react-icons/fa';
-import { SiWireshark, SiKalilinux, SiBurpsuite, SiMetasploit } from 'react-icons/si';
+import { FaCode, FaShieldAlt, FaBrain, FaPython, FaGithub, FaJs, FaReact, FaLinux, FaTerminal, FaNetworkWired, FaUserSecret } from 'react-icons/fa';
+import { SiSupabase, SiVisualstudiocode, SiMongodb } from 'react-icons/si';
 
 const Skills = () => {
     const skillCategories = [
@@ -17,13 +17,13 @@ const Skills = () => {
             ]
         },
         {
-            title: "Security Tools",
+            title: "Technical Tools",
             icon: <FaShieldAlt className="text-cyan text-3xl" />,
             skills: [
-                { name: "Kali Linux", icon: <SiKalilinux /> },
-                { name: "Wireshark", icon: <SiWireshark /> },
-                { name: "Burp Suite", icon: <SiBurpsuite /> },
-                { name: "Metasploit", icon: <SiMetasploit /> },
+                { name: "GitHub", icon: <FaGithub /> },
+                { name: "VS code", icon: <SiVisualstudiocode /> },
+                { name: "Superbase", icon: <SiSupabase /> },
+                { name: "MongoDB", icon: <SiMongodb /> },
             ]
         },
         {
