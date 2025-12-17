@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import CyberCard from './CyberCard';
 import { FaCode, FaShieldAlt, FaBrain, FaPython, FaGithub, FaJs, FaReact, FaLinux, FaTerminal, FaNetworkWired, FaUserSecret } from 'react-icons/fa';
-import { SiSupabase, SiVisualstudiocode, SiMongodb } from 'react-icons/si';
+import { SiSupabase, SiMongodb } from 'react-icons/si';
 
 const Skills = () => {
     const skillCategories = [
@@ -21,7 +21,7 @@ const Skills = () => {
             icon: <FaShieldAlt className="text-cyan text-3xl" />,
             skills: [
                 { name: "GitHub", icon: <FaGithub /> },
-                { name: "VS code", icon: <SiVisualstudiocode /> },
+                { name: "VS code", icon: <SiSupabase /> },
                 { name: "Superbase", icon: <SiSupabase /> },
                 { name: "MongoDB", icon: <SiMongodb /> },
             ]
