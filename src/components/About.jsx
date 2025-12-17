@@ -30,11 +30,10 @@ const About = () => {
                         <CyberCard>
                             <h3 className="text-2xl font-orbitron text-cyan mb-4">WHO_AM_I?</h3>
                             <p className="text-gray-300 font-mono leading-relaxed mb-4">
-                                I am a passionate Cyber Security Enthusiast dedicated to securing digital landscapes. With a strong foundation in ethical hacking and network defense, I strive to protect systems from vulnerabilities and threats.
+                                I am passionate about Full stack and an ML enthusiast with a strong interest in software development and data-driven systems. I focus on building solid fundamentals in programming, databases, and logical problem-solving, aiming to understand concepts deeply and apply them correctly.
                             </p>
                             <p className="text-gray-300 font-mono leading-relaxed">
-                                My journey involves continuous learning in penetration testing, cryptography, and secure coding practices. I love solving CTF challenges and analyzing malware behavior.
-                            </p>
+                               I am a curious and consistent learner who values clarity, structured thinking, and continuous improvement. Through hands-on practice and focused learning, I work on strengthening my technical foundation and applying my skills to meaningful, real-world projects.
                         </CyberCard>
                     </div>
                 </motion.div>
