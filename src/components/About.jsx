@@ -12,8 +12,7 @@ const About = () => {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
-                    className="max-w-4xl mx-auto"
-                >
+                    className="max-w-4xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-orbitron text-center mb-12">
                         <span className="text-neon">01.</span> ABOUT_ME
                     </h2>
