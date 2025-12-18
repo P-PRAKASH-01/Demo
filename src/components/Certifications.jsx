@@ -7,6 +7,7 @@ import GUVICert from '../assets/certificates/GUVI.png';
 import IITBJavaCert from '../assets/certificates/IITB Java.png';
 import IITBRDBMSCert from '../assets/certificates/IITB RDBMS.png';
 import NPTELCert from '../assets/certificates/NPTEL.jpg';
+import AWSCert from '../assets/certificates/AWS.png';
 
 const Certifications = () => {
     const [selectedCert, setSelectedCert] = useState(null);
@@ -39,6 +40,13 @@ const Certifications = () => {
             date: "2025",
             id: "NPTEL-2456556",
             image: NPTELCert
+        },
+        {
+            name: " AWS Fundamentals for CloudPractitioners(cerit course)",
+            issuer: "NmindsAcademy",
+            date: "2025",
+            id: "AWS-10699008",
+            image: AWSCert
         }
     ];
 
