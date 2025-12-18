@@ -21,7 +21,7 @@ const Projects = () => {
         },
         {
             title: "Smart Gallery Application",
-            tech: ["React", "Node.js", "HTML", "PWA"],
+            tech: ["React", "python", "HTML", "PWA"],
             description: "Smart Gallery is a web application that helps users to manage their photos with Auto tagging feature.",
             github: "https://github.com/P-PRAKASH-01/Smart-Gallery",
             demo: "#"
