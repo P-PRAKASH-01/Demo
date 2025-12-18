@@ -79,7 +79,7 @@ const Contact = () => {
 
                             <button
                                 type="submit"
-                                className="w-full bg-neon/10 border border-neon text-neon font-mono py-3 hover:bg-neon hover:text-black transition-all duration-300 uppercase tracking-wider"
+                                className="w-full bg-neon/10 border border-neon text-neon font-mono py-3 hover:bg-neon hover:text-white transition-all duration-300 uppercase tracking-wider"
                             >
                                 Initiate Transmission
                             </button>
