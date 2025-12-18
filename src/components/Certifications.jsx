@@ -1,27 +1,42 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import CyberCard from './CyberCard';
-import { FaCertificate } from 'react-icons/fa';
+
+// import certificate images
+import GUVICert from '../assets/certificates/GUVI.png';
+import IITBJavaCert from '../assets/certificates/IITB Java.png';
+import IITBRDBMSCert from '../assets/certificates/IITB RDBMS.png';
+import NPTELCert from '../assets/certificates/NPTEL.png';
 
 const Certifications = () => {
     const certs = [
         {
-            name: "Certified Ethical Hacker (CEH)",
-            issuer: "EC-Council",
-            date: "2023",
-            id: "ECC-123456"
+            name: "GUVI Certified Webinar",
+            issuer: "GUVI",
+            date: "2025",
+            id: "GUVI-123456",
+            image: GUVICert
         },
         {
-            name: "CompTIA Security+",
-            issuer: "CompTIA",
-            date: "2022",
-            id: "COMP-789012"
+            name: "IITB Java",
+            issuer: "IITB",
+            date: "2025",
+            id: "IITB-789012",
+            image: IITBJavaCert
         },
         {
-            name: "OSCP",
-            issuer: "Offensive Security",
-            date: "2024",
-            id: "OS-345678"
+            name: "IITB RDBMS",
+            issuer: "IITB",
+            date: "2025",
+            id: "IITB-345678",
+            image: IITBRDBMSCert
+        },
+        {
+            name: "Introduction to industry 4.0",
+            issuer: "NPTEL",
+            date: "2025",
+            id: "NPTEL-2456556",
+            image: NPTELCert
         }
     ];
 
@@ -41,12 +56,39 @@ const Certifications = () => {
                     <div className="grid md:grid-cols-3 gap-6">
                         {certs.map((cert, index) => (
                             <CyberCard key={index} className="text-center group">
-                                <div className="w-16 h-16 mx-auto mb-4 bg-neon/10 rounded-full flex items-center justify-center group-hover:bg-neon/20 transition-colors">
-                                    <FaCertificate className="text-3xl text-neon" />
+
+                                {/* Certificate Image */}
+                                <div className="relative w-full h-40 mb-4 overflow-hidden rounded-lg border border-neon/20">
+                                    <img
+                                        src={cert.image}
+                                        alt={cert.name}
+                                        className="w-full h-full object-cover 
+                                                   group-hover:scale-105 
+                                                   transition-transform duration-300"
+                                    />
+
+                                    {/* Hover overlay */}
+                                    <div className="absolute inset-0 bg-black/70 
+                                                    opacity-0 group-hover:opacity-100 
+                                                    flex items-center justify-center 
+                                                    text-neon font-mono text-sm 
+                                                    transition-opacity">
+                                        View Certificate
+                                    </div>
                                 </div>
-                                <h3 className="text-lg font-orbitron text-white mb-2">{cert.name}</h3>
-                                <p className="text-cyan font-mono text-sm mb-1">{cert.issuer}</p>
-                                <p className="text-gray-500 text-xs font-mono">{cert.date} | ID: {cert.id}</p>
+
+                                <h3 className="text-lg font-orbitron text-white mb-2">
+                                    {cert.name}
+                                </h3>
+
+                                <p className="text-cyan font-mono text-sm mb-1">
+                                    {cert.issuer}
+                                </p>
+
+                                <p className="text-gray-500 text-xs font-mono">
+                                    {cert.date} | ID: {cert.id}
+                                </p>
+
                             </CyberCard>
                         ))}
                     </div>
