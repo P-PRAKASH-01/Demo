@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import CyberCard from './CyberCard';
 
@@ -9,6 +9,8 @@ import IITBRDBMSCert from '../assets/certificates/IITB RDBMS.png';
 import NPTELCert from '../assets/certificates/NPTEL.jpg';
 
 const Certifications = () => {
+    const [selectedCert, setSelectedCert] = useState(null);
+
     const certs = [
         {
             name: "GUVI Certified Webinar",
@@ -58,7 +60,11 @@ const Certifications = () => {
                             <CyberCard key={index} className="text-center group">
 
                                 {/* Certificate Image */}
-                                <div className="relative w-full h-40 mb-4 overflow-hidden rounded-lg border border-neon/20">
+                                <div
+                                    className="relative w-full h-40 mb-4 overflow-hidden rounded-lg 
+                                               border border-neon/20 cursor-pointer"
+                                    onClick={() => setSelectedCert(cert)}
+                                >
                                     <img
                                         src={cert.image}
                                         alt={cert.name}
@@ -73,7 +79,7 @@ const Certifications = () => {
                                                     flex items-center justify-center 
                                                     text-neon font-mono text-sm 
                                                     transition-opacity">
-                                        View Certificate
+                                        Click to Preview
                                     </div>
                                 </div>
 
@@ -94,6 +100,36 @@ const Certifications = () => {
                     </div>
                 </motion.div>
             </div>
+
+            {/* 🔍 Preview Modal */}
+            {selectedCert && (
+                <div
+                    className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center px-4"
+                    onClick={() => setSelectedCert(null)}
+                >
+                    <div
+                        className="relative max-w-4xl w-full"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <button
+                            className="absolute -top-10 right-0 text-neon font-mono text-sm"
+                            onClick={() => setSelectedCert(null)}
+                        >
+                            ✕ Close
+                        </button>
+
+                        <img
+                            src={selectedCert.image}
+                            alt={selectedCert.name}
+                            className="w-full max-h-[80vh] object-contain rounded-lg border border-neon/30"
+                        />
+
+                        <p className="mt-4 text-center text-gray-400 font-mono text-sm">
+                            {selectedCert.name} – {selectedCert.issuer}
+                        </p>
+                    </div>
+                </div>
+            )}
         </section>
     );
 };
