@@ -7,8 +7,8 @@ export default {
     theme: {
         extend: {
             colors: {
-                neon: "#39FF14",
-                cyan: "#00FFFF",
+                neon: 'rgb(57 255 20)',
+                cyan: 'rgb(0 255 255)',
             },
             fontFamily: {
                 mono: ["'Share Tech Mono'", "monospace"],
