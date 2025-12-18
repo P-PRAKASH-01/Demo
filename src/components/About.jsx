@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import CyberCard from './CyberCard';
 import { FaUserSecret } from 'react-icons/fa';
@@ -31,9 +32,39 @@ const About = () => {
                             <p className="text-gray-300 font-mono leading-relaxed mb-4">
                                 I am passionate about Full stack and an ML enthusiast with a strong interest in software development and data-driven systems. I focus on building solid fundamentals in programming, databases, and logical problem-solving, aiming to understand concepts deeply and apply them correctly.
                             </p>
-                            <p className="text-gray-300 font-mono leading-relaxed">
-                               I am a curious and consistent learner who values clarity, structured thinking, and continuous improvement. Through hands-on practice and focused learning, I work on strengthening my technical foundation and applying my skills to meaningful, real-world projects.
-                            </p>
+                            <div className="flex flex-col gap-4">
+                                {/* Social Links */}
+                                <div className="flex items-center gap-6">
+                                    <a
+                                        href="https://github.com/P-PRAKASH-01"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-gray-400 hover:text-neon transition text-2xl"
+                                    >
+                                        <FaGithub />
+                                    </a>
+
+                                    <a
+                                        href="www.linkedin.com/in/prakash--p7"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-gray-400 hover:text-cyan transition text-2xl"
+                                    >
+                                        <FaLinkedin />
+                                    </a>
+                                </div>
+
+                                {/* Download CV Button */}
+                                <a
+                                    href="public/Prakash_P_Resume.pdf"
+                                    download
+                                    className="inline-flex items-center gap-2 w-fit px-6 py-2 font-orbitron text-sm border border-neon text-neon rounded-md
+                   hover:bg-neon hover:text-black transition-all duration-300"
+                                >
+                                    <FaDownload />
+                                    DOWNLOAD_CV
+                                </a>
+                            </div>
                         </CyberCard>
                     </div>
                 </motion.div>
