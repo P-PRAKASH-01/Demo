@@ -6,31 +6,24 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const Projects = () => {
     const projects = [
         {
-            title: "Network Vulnerability Scanner",
-            tech: ["Python", "Nmap", "Scapy"],
-            description: "A custom tool to scan networks for open ports and potential vulnerabilities. Generates detailed reports.",
-            github: "#",
+            title: "Weather Checker Web application",
+            tech: ["Python", "HTML", "JavaScript"],
+            description: "A Weather checker is used to check the weather of any city before Going any vacation or trip.",
+            github: "https://github.com/P-PRAKASH-01/weather-comfort-checker",
+            demo: "weather-comfort-checker.vercel.app/"
+        },
+        {
+            title: "Kisan mitra Application",
+            tech: ["Python", "Node.js", "HTML", "PWA"],
+            description: "Kisan mitra is a web application that helps farmers to detect the diesease from leaf picture and suggest the best treatment .",
+            github: "https://github.com/P-PRAKASH-01/Kisan-Mitra-app",
             demo: "#"
         },
         {
-            title: "Secure Chat Application",
-            tech: ["React", "Node.js", "Socket.io", "AES-256"],
-            description: "End-to-end encrypted chat application ensuring privacy and data integrity.",
-            github: "#",
-            demo: "#"
-        },
-        {
-            title: "Malware Analysis Sandbox",
-            tech: ["C++", "VirtualBox API", "Python"],
-            description: "Automated environment for safely executing and analyzing suspicious files.",
-            github: "#",
-            demo: "#"
-        },
-        {
-            title: "Phishing Detection System",
-            tech: ["Machine Learning", "Python", "Scikit-learn"],
-            description: "AI-powered system to detect and block phishing URLs in real-time.",
-            github: "#",
+            title: "Smart Gallery Application",
+            tech: ["React", "Node.js", "HTML", "PWA"],
+            description: "Smart Gallery is a web application that helps users to manage their photos with Auto tagging feature.",
+            github: "https://github.com/P-PRAKASH-01/Smart-Gallery",
             demo: "#"
         }
     ];
