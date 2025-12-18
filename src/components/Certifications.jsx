@@ -42,7 +42,7 @@ const Certifications = () => {
             image: NPTELCert
         },
         {
-            name: " AWS Fundamentals for CloudPractitioners(cerit course)",
+            name: " AWS Fundamentals for Cloud Practitioners(cerit course)",
             issuer: "NmindsAcademy",
             date: "2025",
             id: "AWS-10699008",
