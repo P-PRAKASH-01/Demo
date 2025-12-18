@@ -45,7 +45,7 @@ const About = () => {
                                     </a>
 
                                     <a
-                                        href="www.linkedin.com/in/prakash--p7"
+                                        href="https://www.linkedin.com/in/prakash--p7"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-gray-400 hover:text-cyan transition text-2xl"
