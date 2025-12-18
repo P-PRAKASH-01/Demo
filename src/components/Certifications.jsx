@@ -6,7 +6,7 @@ import CyberCard from './CyberCard';
 import GUVICert from '../assets/certificates/GUVI.png';
 import IITBJavaCert from '../assets/certificates/IITB Java.png';
 import IITBRDBMSCert from '../assets/certificates/IITB RDBMS.png';
-import NPTELCert from '../assets/certificates/NPTEL.png';
+import NPTELCert from '../assets/certificates/NPTEL.jpg';
 
 const Certifications = () => {
     const certs = [
