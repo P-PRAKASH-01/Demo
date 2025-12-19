@@ -10,7 +10,7 @@ const Projects = () => {
             tech: ["Python", "HTML", "JavaScript"],
             description: "A Weather checker is used to check the weather of any city before Going any vacation or trip.",
             github: "https://github.com/P-PRAKASH-01/weather-comfort-checker",
-            demo: "weather-comfort-checker.vercel.app/"
+            demo: "https://weather-comfort-checker.vercel.app/"
         },
         {
             title: "Kisan mitra Application",

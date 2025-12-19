@@ -56,10 +56,10 @@ const About = () => {
 
                                 {/* Download CV Button */}
                                 <a
-                                    href="public/Prakash_P_Resume.pdf"
+                                    href="/Prakash_P_Resume.pdf"
                                     download
                                     className="inline-flex items-center gap-2 w-fit px-6 py-2 font-orbitron text-sm border border-neon text-neon rounded-md
-                   hover:bg-neon hover:text-black transition-all duration-300"
+                   hover:bg-neon hover:text-white transition-all duration-300"
                                 >
                                     <FaDownload />
                                     DOWNLOAD_CV
